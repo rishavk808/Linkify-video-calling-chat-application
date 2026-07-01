@@ -6,6 +6,11 @@ import { completeOnboarding } from "../lib/api";
 import { LoaderIcon, MapPinIcon, ShipWheelIcon, ShuffleIcon } from "lucide-react";
 import { LANGUAGES } from "../constants";
 
+const generateRandomAvatar = () => {
+  const idx = Math.floor(Math.random() * 100) + 1;
+  return `https://api.dicebear.com/9.x/bottts/svg?seed=${idx}`;
+};
+
 const OnboardingPage = () => {
   const { authUser } = useAuthUser();
   const queryClient = useQueryClient();
@@ -38,10 +43,9 @@ const OnboardingPage = () => {
   };
 
   const handleRandomAvatar = () => {
-    const idx = Math.floor(Math.random() * 100) + 1; // generates number b/w 1-100
-    const randomAvatar = `https://avatar.iran.liara.run/public/${idx}.png`;
+    const randomAvatar = generateRandomAvatar();
 
-    setFormState({ ...formState, profilePic: randomAvatar });
+    setFormState((prev) => ({ ...prev, profilePic: randomAvatar }));
     toast.success("Random profile picture generated!");
   };
 
