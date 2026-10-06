@@ -27,7 +27,7 @@ const SignUpPage = () => {
 
   const handleSignup = (e) => {
     e.preventDefault();
-    signupMutation(signupData);
+    signupMutation(signupData);//api.js file
   };
 
   return (
