@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  🔗 <strong>Live Demo:</strong> <em>[add your deployed URL here](https://linkify-video-calling-chat-application.onrender.com/login)</em> &nbsp;|&nbsp;
+  🔗 <strong>Live Demo:</strong> <a href="https://linkify-video-calling-chat-application.onrender.com">linkify-video-calling-chat-application.onrender.com</a> &nbsp;|&nbsp;
   📦 <a href="https://github.com/rishavk808/Linkify-video-calling-chat-application">Repository</a>
 </p>
 
